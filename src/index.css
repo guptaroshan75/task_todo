@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Digital-7";
+    src: url(/assets/digital-7.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #e6e6e6;
+    --text-color: #000000;
+    --main-color: #d4902b;
+    --dark-main-color: #c49044;
+    --new-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    --green-color: #27cc1c;
+    --gray-color: #6d6d6d;
+    --card-bg: linear-gradient(150deg, #fff, #fff);
+    --table-bg: linear-gradient(150deg, #d4d4ec, #111);
+    --bs-white: #fff;
+    --white: #fff;
+    --after-bg-light: #d4d4ec;
+}
+
+svg {
+    vertical-align: middle;
+}
+
+.custom-radar-chart .apexcharts-yaxis text {
+    transform: translateY(5px);
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffeacc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-main-color);
+}
+
+/* Tab List Style */
+.css-hzcega-MuiTabs-list {
+    gap: 20px;
+    align-items: center;
+}
+
+/* Only button css */
+.c-button {
+    overflow: hidden;
+    box-shadow: none !important;
+    text-decoration: none;
+    text-transform: capitalize !important;
+    padding: 1px 25px !important;
+    cursor: pointer;
+    border: 1px solid transparent !important;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+.c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+    background-color: var(--bs-white);
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+    color: #000;
+    transition: all 1.5s;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.5) translateY(0) translateZ(0);
+}
+
+/* action button css */
+.red-combo {
+    background: #ff000026 !important;
+    color: red !important;
+}
+
+.success-combo {
+    background: #00800026 !important;
+    color: green !important;
+}
+
+.purple-combo {
+    background: #e2e2fc !important;
+    color: #5200ff !important;
+}
+
+.danger-combo {
+    background: #ff7d0026 !important;
+    color: #ff7d00 !important;
+}
+
+.send-combo {
+    background: rgb(3, 169, 244) !important;
+    color: #fff !important;
+}
+
+.danger-combo-disable {
+    background: rgba(0, 0, 0, 0.12) !important;
+    color: rgba(0, 0, 0, 0.26) !important;
+}
+
+.social-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: #000000;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+/* action button css */
